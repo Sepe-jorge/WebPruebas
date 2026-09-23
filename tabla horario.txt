@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Horario DAM1</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #666;
+            font-size: 19px;
+            font-weight: normal;
+            margin-bottom: 25px;
+        }
+
+        table {
+            width: 90%;
+            margin: auto;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        td, th {
+            border: 1px solid #777;
+        }
+
+        .titulo {
+            height: 40px;
+            background-color: #f3f3f3;
+            color: #008b99;
+            font-size: 20px;
+        }
+
+        .dias {
+            height: 32px;
+            color: #008b99;
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        .hora {
+            width: 70px;
+            color: #008b99;
+            font-size: 11px;
+            font-weight: normal;
+            text-align: center;
+            background-color: #fafafa;
+        }
+
+        .clase {
+            padding: 6px 3px;
+            font-size: 10px;
+            vertical-align: middle;
+        }
+
+        /* He ido poniendo los colores a ojo */
+        .naranja { background: #ff8200; }
+        .rosa { background: #e5a0f4; }
+        .azul { background: #7ceeee; }
+        .verde { background: #00df00; }
+        .marron { background: #bd7b7b; }
+        .morado { background: #8581bd; }
+        .amarillo { background: #ffff66; }
+        .rojo { background: #ff8181; }
+        .melocoton { background: #ffc997; }
+        .turquesa { background: #00a879; }
+
+        .clase b {
+            font-weight: normal;
+        }
+
+        .profe {
+            font-size: 7px;
+            margin-top: 3px;
+        }
+
+        .recreo {
+            height: 62px;
+            text-align: center;
+            color: #008b99;
+            font-size: 10px;
+        }
+
+        /* Este tamaño se me ha quedado un poco distinto */
+        .fila {
+            height: 80px;
+        }
+
+        .especial {
+            font-size: 9px;
+        }
+
+        @media (max-width: 800px) {
+            table {
+                width: 800px;
+            }
+
+            body {
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Grupos de alumnos</h1>
+
+<table>
+    <tr>
+        <th colspan="6" class="titulo">DAM1</th>
+    </tr>
+
+    <tr>
+        <th class="hora"></th>
+        <th class="dias">Lunes</th>
+        <th class="dias">Martes</th>
+        <th class="dias">Miercoles</th>
+        <th class="dias">Jueves</th>
+        <th class="dias">Viernes</th>
+    </tr>
+
+    <tr class="fila">
+        <th class="hora">8:30<br>9:25</th>
+
+        <td rowspan="2" class="clase naranja">
+            <b>Entornos de desarrollo-1CFGSDAM</b>
+            <div class="profe">Mario Blanco, Javier</div>
+        </td>
+
+        <td class="clase rosa">
+            <b>Lenguajes de marcas y sist. de gest. de inform.-1C</b>
+            <div class="profe">Encinas Díaz, Juan Antonio</div>
+        </td>
+
+        <td rowspan="2" class="clase marron">
+            <b>Sistemas Informáticos-1CFGSDAM</b>
+            <div class="profe">Alemany Rubio, Jaime</div>
+        </td>
+
+        <td rowspan="2" class="clase verde">
+            <b>Bases de Datos-1CFGSDAM</b>
+            <div class="profe">Velasco Fernández, Alicia</div>
+        </td>
+
+        <td class="clase rojo">
+            <b>Ing. profes. para CFGS-1CFGSDAM</b>
+            <div class="profe">Rubio Muñoz, María Teresa</div>
+        </td>
+    </tr>
+
+    <tr class="fila">
+        <th class="hora">9:25<br>10:20</th>
+
+        <td class="clase azul">
+            <b>Digitalización aplicada al sec-1CFGSDAM</b>
+            <div class="profe">Mario Blanco, Javier</div>
+        </td>
+
+        <td class="clase marron">
+            <b>Sistemas Informáticos-1CFGSDAM</b>
+            <div class="profe">Alemany Rubio, Jaime</div>
+        </td>
+    </tr>
+
+    <tr class="fila">
+        <th class="hora">10:20<br>11:15</th>
+
+        <td class="clase marron">
+            <b>Sistemas Informáticos-1CFGSDAM</b>
+            <div class="profe">Alemany Rubio, Jaime</div>
+        </td>
+
+        <td class="clase morado">
+            <b>Programación-1CFGSDAM</b>
+            <div class="profe">Fernández Torralbo, Juan Pedro</div>
+        </td>
+
+        <td class="clase amarillo especial">
+            <b>Sostenibilidad aplicada al sis-1CFGSDAM</b>
+            <div class="profe">Fernández Torralbo, Juan Pedro</div>
+        </td>
+
+        <td class="clase morado">
+            <b>Programación-1CFGSDAM</b>
+            <div class="profe">Fernández Torralbo, Juan Pedro</div>
+        </td>
+
+        <td class="clase verde">
+            <b>Bases de Datos-1CFGSDAM</b>
+            <div class="profe">Velasco Fernández, Alicia</div>
+        </td>
+    </tr>
+
+    <tr>
+        <th class="hora">11:15<br>11:45</th>
+        <td colspan="5" class="recreo">recreo</td>
+    </tr>
+
+    <tr class="fila">
+        <th class="hora">11:45<br>12:40</th>
+
+        <td class="clase rosa">
+            <b>Lenguajes de marcas y sist. de gest. de inform.-1C</b>
+            <div class="profe">Encinas Díaz, Juan Antonio</div>
+        </td>
+
+        <td class="clase morado">
+            <b>Programación-1CFGSDAM</b>
+            <div class="profe">Fernández Torralbo, Juan Pedro</div>
+        </td>
+
+        <td class="clase azul">
+            <b>Digitalización aplicada al sec-1CFGSDAM</b>
+            <div class="profe">Mario Blanco, Javier</div>
+        </td>
+
+        <td class="clase morado">
+            <b>Programación-1CFGSDAM</b>
+            <div class="profe">Fernández Torralbo, Juan Pedro</div>
+        </td>
+
+        <td class="clase verde">
+            <b>Bases de Datos-1CFGSDAM</b>
+            <div class="profe">Velasco Fernández, Alicia</div>
+        </td>
+    </tr>
+
+    <tr class="fila">
+        <th class="hora">12:40<br>13:35</th>
+
+        <td rowspan="2" class="clase morado">
+            <b>Programación-1CFGSDAM</b>
+            <div class="profe">Fernández Torralbo, Juan Pedro</div>
+        </td>
+
+        <td class="clase melocoton">
+            <b>Itinerario personal emple.-1CFGSDAM</b>
+            <div class="profe">Valenzuela, Mercedes</div>
+        </td>
+
+        <td class="clase rojo">
+            <b>Ing. profes. para CFGS-1CFGSDAM</b>
+            <div class="profe">Rubio Muñoz, María Teresa</div>
+        </td>
+
+        <td class="clase rosa">
+            <b>Lenguajes de marcas y sist. de gest. de inform.-1C</b>
+            <div class="profe">Encinas Díaz, Juan Antonio</div>
+        </td>
+
+        <td rowspan="2" class="clase melocoton">
+            <b>Itinerario personal emple.-1CFGSDAM</b>
+            <div class="profe">Valenzuela, Mercedes</div>
+        </td>
+    </tr>
+
+    <tr class="fila">
+        <th class="hora">13:35<br>14:30</th>
+
+        <td class="clase verde">
+            <b>Bases de Datos-1CFGSDAM</b>
+            <div class="profe">Velasco Fernández, Alicia</div>
+        </td>
+
+        <td class="clase turquesa">
+            <b>Proyecto intermodular de desarrollo de aplicaciones</b>
+            <div class="profe">Fernández Torralbo, Juan Pedro</div>
+        </td>
+
+        <td class="clase marron">
+            <b>Sistemas Informáticos-1CFGSDAM</b>
+            <div class="profe">Alemany Rubio, Jaime</div>
+        </td>
+    </tr>
+
+
